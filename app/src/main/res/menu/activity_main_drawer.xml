@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_place"
+            android:icon="@mipmap/iv_menu_place"
+            android:title="地点" />
+        <item
+            android:id="@+id/nav_feedback"
+            android:icon="@mipmap/iv_menu_feedback"
+            android:title="反馈" />
+        <item
+            android:id="@+id/nav_setting"
+            android:icon="@mipmap/iv_menu_setting"
+            android:title="设置" />
+        <item
+            android:id="@+id/nav_cancel"
+            android:icon="@mipmap/iv_menu_cancel"
+            android:title="退出" />
+    </group>
+
+
+</menu>

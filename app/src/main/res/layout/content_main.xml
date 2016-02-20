@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+
+    <RadioGroup
+        android:id="@+id/rg_tab_bar"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"
+        android:background="#fafafa"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/rb_home"
+            style="@style/tab_menu_item"
+            android:checked="true"
+            android:drawableTop="@drawable/icon_home"
+            android:text="首页" />
+
+        <RadioButton
+            android:id="@+id/rb_closet"
+            style="@style/tab_menu_item"
+            android:drawableTop="@drawable/icon_closet"
+            android:text="衣柜" />
+
+        <RadioButton
+            android:id="@+id/rb_add"
+            style="@style/tab_menu_item"
+            android:drawableTop="@drawable/icon_add"
+            android:text="添加" />
+
+        <RadioButton
+            android:id="@+id/rb_user"
+            style="@style/tab_menu_item"
+            android:drawableTop="@drawable/icon_user"
+            android:text="我" />
+    </RadioGroup>
+    <View
+        android:id="@+id/div_tab_bar"
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:layout_above="@id/rg_tab_bar"
+        android:background="@color/divider_gray" />
+
+    <FrameLayout
+        android:id="@+id/ly_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/div_tab_bar"
+        ></FrameLayout>
+
+</RelativeLayout>
